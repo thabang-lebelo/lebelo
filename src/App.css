@@ -1,0 +1,272 @@
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(14, 21, 24); /* Dark background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #e4ebe6;
+  background-image: url("back.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeIn 2s ease-in; /* Smooth fade-in animation */
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  text-align: center;
+  color: #28a745; /* Bright green */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-size: 3rem; /* Increased size for more impact */
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: 'Lora', serif;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* Navigation Bar Styles */
+#navigation {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+  width: 220px;
+  position: fixed;
+  text-align: left;
+  right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px; /* Added padding to the navigation bar */
+}
+
+#navigation ul {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0; /* Remove vertical padding */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#navigation ul li {
+  margin: 5px 0; /* Reduced margin for better spacing */
+}
+
+#navigation ul li button {
+  background-color: #94a592; /* Earthy green */
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin: 0; /* Ensure no margin breaks button continuity */
+}
+
+#navigation ul li button:hover {
+  background-color: #3e8ec3; /* Bright blue on hover */
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Section Styles */
+section {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 30px; /* Increased padding */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px; /* Wider max-width for more spacious content */
+  margin: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Bright primary blue */
+  color: #ffffff; /* Changed to white for better contrast */
+  border: none;
+  padding: 12px 24px; /* Increased padding for better touch targets */
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+/* Button Hover Effects */
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Scale for buttons on hover */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for better spacing */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #28a745; /* Bright green */
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 172, 52, 0.8); /* Glow effect on focus */
+}
+
+/* Table Styles */
+table {
+  margin-top: 25px;
+  border-collapse: collapse;
+  width: 100%;
+  color: #42eb64; /* Bright green */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: rgb(83, 251, 103); /* Bright green for header */
+  color: rgb(220, 235, 235);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+th:hover {
+  background-color: #28a745; /* Hover effect */
+}
+
+/* Active User Display */
+#activeUserDisplay {
+  margin-bottom: 20px;
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Main User Management Container */
+#userManagement {
+  background-color: #ffffff; /* Bright background for clarity */
+  padding: 20px;
+  max-width: 1200px; 
+  margin: auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Form Container */
+.user-form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 15px; /* Space between input fields */
+}
+
+/* Input Styles */
+input[type="email"] {
+  padding: 12px;
+  border: 1px solid #cccccc; /* Soft border */
+  border-radius: 4px; /* Rounded input corners */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Action Button Styles within the Table */
+.action-button {
+  background-color: #28a745; /* Action button green */
+  border-radius: 4px; /* Rounded corners for buttons */
+  padding: 8px 12px; /* Button padding */
+  color: white; /* White text */
+  border: none; /* No border */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Action Button Hover Effects */
+.action-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-1px); /* Slight lift effect */
+}
+
+/* Error/Success Messages */
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px; /* Rounded corners for message boxes */
+}
+
+.success {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+}
+
+.error {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Add padding to body for mobile */
+  }
+  
+  #navigation {
+    width: auto; /* Adjust width for mobile */
+    position: relative; /* Change positioning */
+    margin: 10px 0; /* Margin for better spacing */
+  }
+
+  .user-form {
+    flex-direction: column; /* Stack inputs vertically on smaller screens */
+  }
+  
+  button {
+    width: 100%; /* Full width buttons */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Responsive heading size */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Responsive heading size */
+  }
+  
+  h3 {
+    font-size: 1.5rem; /* Responsive heading size */
+  }
+}
